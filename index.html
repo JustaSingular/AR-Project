@@ -10,25 +10,26 @@
       <a-assets>
         <a-asset-item id="helmetModel" src="models/DamagedHelmet.glb"></a-asset-item>
         <a-asset-item id="duckModel" src="models/Duck.glb"></a-asset-item>
+        <a-asset-item id="myersModel" src="models/michael_myers.glb"></a-asset-item>
       </a-assets>
 
       <a-marker type='pattern' url='armarker/DanagedHelmet_marker.patt'>
         <a-entity 
-          gltf-model="#duckModel" 
+          gltf-model="#myersModel" 
           scale="0.5 0.5 0.5" 
           position="0 0 0"
           rotation="0 0 0">
         </a-entity>
       </a-marker>
 
-      <a-marker type='pattern' url='armarker/Fox_marker.patt'>
+      <!-- <a-marker type='pattern' url='armarker/Fox_marker.patt'>
         <a-entity 
           gltf-model="#helmetModel" 
           scale="1 1 1" 
           position="0 0.5 0"
           rotation="0 0 0">
         </a-entity>
-      </a-marker>
+      </a-marker> -->
 
       <a-entity camera></a-entity>
       
