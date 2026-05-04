@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.7.0/dist/aframe-extras.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 
   <body style="margin: 0px; overflow: hidden;">
@@ -11,14 +12,16 @@
         <a-asset-item id="helmetModel" src="models/DamagedHelmet.glb"></a-asset-item>
         <a-asset-item id="duckModel" src="models/Duck.glb"></a-asset-item>
         <a-asset-item id="myersModel" src="models/michael_myers.glb"></a-asset-item>
+        <a-asset-item id="bouquetModel" src="models/bouquet.glb"></a-asset-item>
       </a-assets>
 
       <a-marker type='pattern' url='armarker/DanagedHelmet_marker.patt'>
         <a-entity 
-          gltf-model="#myersModel" 
+          gltf-model="#bouquetModel" 
           scale="1 1 1" 
           position="0 0 0"
-          rotation="0 0 0">
+          rotation="0 0 0"
+          animation-mixer>
         </a-entity>
       </a-marker>
 
