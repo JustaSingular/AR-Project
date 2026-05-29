@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.7.0/dist/aframe-extras.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 
-    <!-- <script>
+    <script>
       AFRAME.registerComponent('jar-glass', {
         init: function () {
           // Wait for the glTF model to fully load
@@ -49,7 +49,7 @@
           });
         }
       });
-    </script> -->
+    </script>
   </head>
 
   <body style="margin: 0px; overflow: hidden;">
@@ -65,7 +65,7 @@
         <a-asset-item id="FinalBD" src="models/birthday.glb"></a-asset-item>
         <a-asset-item id="NinaTV" src="models/Nina_tv - Copy.glb"></a-asset-item>
         <a-asset-item id="jar" src="models/jar.glb"></a-asset-item>
-        <a-asset-item id="jar" src="models/jasbd.glb"></a-asset-item>
+        <a-asset-item id="jasbd" src="models/jasbd.glb"></a-asset-item>
       </a-assets>
 
       <a-marker type='pattern' url='armarker/patternkanji.patt'>
@@ -80,7 +80,7 @@
 
       <a-marker type='pattern' url='armarker/patternhiro.patt'>
         <a-entity 
-          gltf-model="#models/jasbd.glb" 
+          gltf-model="#jar" 
           jar-glass
           scale="1 1 1" 
           position="0 0 0"
@@ -88,14 +88,14 @@
         </a-entity>
       </a-marker>
 
-      <!-- <a-marker type='pattern' url='armarker/wmarker.patt'>
+      <a-marker type='pattern' url='armarker/wmarker.patt'>
         <a-entity 
-          gltf-model="#duckModel" 
-          scale="0.5 0.5 0.5" 
+          gltf-model="#jasbd" 
+          scale="1 1 1" 
           position="0 0 0"
           rotation="0 0 0">
         </a-entity>
-      </a-marker> -->
+      </a-marker>
 
       <a-marker type='pattern' url='armarker/patternkanji.patt'>
         <a-entity 
